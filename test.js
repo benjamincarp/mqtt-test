@@ -14,7 +14,7 @@ async.series([
   },
 
   function(cb){
-    sender = ClientBuilder('Sender', cb)
+    sender = ClientBuilder('Sender', cb);
   },
 
   function(cb){
