@@ -20,6 +20,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder ".", "/vagrant", :owner => "www-data", :mount_options => ["dmode=777","fmode=777", "umask=0000","dmask=0000","fmask=0000"]
   config.vm.network :private_network, ip: "192.168.250.222"
 
-  # config.vm.network "forwarded_port", guest: 80, host: 80
-  # config.vm.network "forwarded_port", guest: 27017, host: 27017
+  config.vm.network "forwarded_port", guest: 80, host: 80
+  config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.vm.network "forwarded_port", guest: 27017, host: 27017
 end
