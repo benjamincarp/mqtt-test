@@ -3,5 +3,5 @@ machine:
     version: 4.1.0
 dependencies:
   pre:
-  - sudo npm install -g mosca
+  - npm install -g mosca
 
