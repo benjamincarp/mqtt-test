@@ -5,8 +5,8 @@ var brokers = require('./config/brokers');
   This is just a wrapper class to add standard handlers for connect and message events to an MQTT client
 */
 
-var server = brokers.local;
-//var server = brokers.public;
+//var server = brokers.local;
+var server = brokers.public;
 
 module.exports = function(name, connectCB) {
   var client = mqtt.connect(server, {clean: false, clientId: name});
