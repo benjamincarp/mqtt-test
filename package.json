@@ -4,7 +4,7 @@
   "description": "",
   "main": "client1.js",
   "scripts": {
-    "test": "node mosca_broker.js & mosca & mocha",
+    "test": "node mosca_broker.js & mosca & mocha"
   },
   "author": "",
   "license": "ISC",
