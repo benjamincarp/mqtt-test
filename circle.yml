@@ -3,8 +3,8 @@ machine:
     version: 4.1.0
 dependencies:
   cache_directories:
-    - ~/nvm/versions/v4.1.0/lib/node_modules/mosca
-    - ~/nvm/versions/v4.1.0/bin/mosca
+    - ~/nvm/versions/node/v4.1.0/lib/node_modules/mosca
+    - ~/nvm/versions/node/v4.1.0/bin/mosca
   pre:
     - if [ ! -e ~/nvm/versions/v4.1.0/bin/mosca ]; then npm install -g mosca; else echo "Mosca seems to be cached"; fi;
 
