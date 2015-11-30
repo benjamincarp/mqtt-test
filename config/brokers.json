@@ -1,4 +1,5 @@
 {
   "local": "http://localhost:1883",
+  "embedded": "http://localhost:1885",
   "public": "mqtt://test.mosquitto.org"
 }
