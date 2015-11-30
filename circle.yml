@@ -6,5 +6,5 @@ dependencies:
     - ~/nvm/versions/v4.1.0/lib/node_modules/mosca
     - ~/nvm/versions/v4.1.0/bin/mosca
   pre:
-    - npm install -g mosca
+    - if [ ! -e ~/nvm/versions/v4.1.0/bin/mosca ]; then npm install -g mosca; else echo "Mosca seems to be cached"; fi;
 
