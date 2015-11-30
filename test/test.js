@@ -116,7 +116,3 @@ describe('MQTT testing embedded broker', function() {
   var listener, sender, topic;
   testMQTT(brokers.embedded);
 });
-
-
-
-
