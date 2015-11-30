@@ -1,7 +1,5 @@
 # == Class: nodejs
 #
-# Class defined to create sites and their configuration based on a give template
-#
 class nodejs {
 
   exec { 'node-curl':

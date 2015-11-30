@@ -1,6 +1,4 @@
-# == Class: nodejs
-#
-# Class defined to create sites and their configuration based on a give template
+# == Class: mongodb
 #
 class mongodb {
 

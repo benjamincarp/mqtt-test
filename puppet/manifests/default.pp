@@ -7,3 +7,4 @@ Exec {
 include bootstrap
 include nodejs
 include mongodb
+include global-npm
