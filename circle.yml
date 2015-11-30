@@ -1,7 +1,10 @@
 machine:
   node:
     version: 4.1.0
-test:
-  override:
+dependencies:
+  cache_directories:
+    - ~/nvm/versions/v4.1.0/lib/node_modules/mosca
+    - ~/nvm/versions/v4.1.0/bin/mosca
+  pre:
     - npm install -g mosca
-    - npm test
+
