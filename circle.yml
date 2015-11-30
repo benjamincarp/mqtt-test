@@ -2,6 +2,10 @@ machine:
   node:
     version: 4.1.0
 dependencies:
+  cache_directories:
+    - ~/nvm/v4.1.0/lib/node_modules/mosca
+    - ~/nvm/v4.1.0/bin/mosca
   pre:
-  - npm install -g mosca
+    - npm -g list
+    - if [ $(npm -g list | grep -c starrynight) -lt 1 ]; then npm install -g mosca; else echo "Mosca seems to be cached"; fi
 
